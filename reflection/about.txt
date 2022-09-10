@@ -15,7 +15,8 @@ What I've explored?
 java Reflection API.
 	Should use reflection sparingly, when really needed.
 
-	--> Meanwhile, also implemented the concept of Serialization, to reinforce my learning on that topic, also to test the methods in Reflection API.
+	--> Meanwhile, also implemented the concept of Serialization, to reinforce my learning on that topic,
+		 also to test the methods in Reflection API.
 	--> tried to implement some coding principles, I've learned.
 	 
 	
