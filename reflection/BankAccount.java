@@ -1,5 +1,3 @@
-package myfirstproj;
-
 import java.io.Serializable;
 
 public final class BankAccount implements Serializable{
