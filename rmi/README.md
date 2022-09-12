@@ -5,27 +5,31 @@ Remote Method Invocation:
 	(which can be present in the same machine or remote machine).
 	
 	To create implement this,
-	1) Create the remote interface by extending Remote interface.
+	1) Create the remote interface by extending Remote interface. (Adder)
 		Every methods inside that remote interface must throw remote exception.
-	2) Create the class that implements the remote interface and extends the UnicastRemoteObject
+	2) Create the class that implements the remote interface and extends the UnicastRemoteObject (AdderRemote)
 		Implement all the methods from interface
-	3) Create the Server application
+	3) Create the Server application (Myserver)
 		create the new imlpemented_remote object
 		use Naming.rebind() to give the new name to the object by passing the name and object itself.
-	4) Create the client application
+	4) Create the client application (Myclient)
 		create the get the object from server by using Naming.lookup() and pass in the name, and
 		cast into the remote interface type. 
 		then you can access all the remote object methods from the client side.
 		
-	5)Create Stub object of the implemented_remote class
+	5)Create Stub object of the implemented_remote class 
 		rmic Implemented_remote_className
+		rmic (AdderRemote)
 		
 	6) start the rmiregistry
 		execute rmiregistry <port_number>
+			(rmiregistry 5000)
 		
 	7) start the server application
 		java ServerClassName
+		java (Myserver)
 	8) start the Client application
 		java ClientClassName
+		java (Myclient)
 		
 				
